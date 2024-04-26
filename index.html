@@ -2,92 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-        body{
-            background-image: url("admina.jpg");
-            background-size: 100% 740px;
-            font-family: 'Mulish',sans-serif;
-        }
-        .container h1{
-            font-size: 36px;
-            color: aqua;
-        }
-        .container{
-            width: 300px;
-            height: 400px;
-            background-color: black;
-            margin-left: 36%;
-            margin-top: 7%;
-            text-align: center;
-            color: white;
-        }
-        .container .text{
-            position: relative;
-            top: 7%;
-        }
-        .inp1{
-            border: none;
-            background-color: black;
-            border-bottom: 2px solid white;
-            width: 250px;
-            font-size: 20px;
-            margin-top: 40px;
-            outline: none;
-            color: white;
-        }
-        .inp2{
-            border: none;
-            background-color: black;
-            border-bottom: 2px solid white;
-            width: 250px;
-            font-size: 20px;
-            margin-top: 40px;
-            outline: none;
-            color: white;
-        }
-        .text button{
-            width: 250px;
-            height: 44px;
-            background-color: aqua;
-            color: black;
-            border: none;
-            font-size: 22px;
-            border-radius: 25px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        button:hover{
-            border: 3px solid aqua;
-            color: white;
-            font-size: 20px;
-            background-color: black;
-        }
-        p{
-            margin-top: 30px;
-            font-size: 20px;
-        }
-        p span{
-            color: aqua;
-            cursor: pointer;
-        }
-    </style>
+    <title>QUIZ WEBSITE</title>
+    <link rel="icon" href="quizlogo.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="text">
-            <h1>Login</h1>
-            <input class="inp1" type="text" placeholder="enter Username">
-            <input class="inp2" type="password" placeholder="Enter Password">
-            <p>Forget Password ?</p>
-            <button>Login</button>
-            <p>Not a member? <span>Sign Up</span> </p>
+    <div class="quiz-section">
+        <h1 class="heading">B.TECH CSE QIUZ WEBSITE</h1>
+        <div id="quiz">
+            <h2 class="question" id="question">quiz question</h2>
+            <div class="score"></div>
+            <hr />
+            <ul>
+            <li>
+                <input type="radio" name="answer" class="answer" id="a">
+                <label for="a" id="option_1">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="b">
+                <label for="b" id="option_2">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="c">
+                <label for="c" id="option_3">Quiz Option</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" class="answer" id="d">
+                <label for="d" id="option_4">Quiz Option</label>
+            </li>
+            </ul>
+            <hr/>
+            <div class="btn">
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </div>
     </div>
+    <script src="quiz.js"></script>
 </body>
 </html>
